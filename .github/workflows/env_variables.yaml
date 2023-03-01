@@ -55,7 +55,7 @@ jobs:
       - uses: iamsauravsharma/create-dotenv@v1.2.2
         with:
           env-prefix: "ENVKEY_" # Optional (default: '')
-          # file-name: 'development.env' # Optional (default : '.env')
+          file-name: "test.env" # Optional (default : '.env')
           directory: "assets/" # Optional (default: '.')
         env: # env available for only this steps
           IS_SERVER: true
