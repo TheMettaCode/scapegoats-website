@@ -19,4 +19,4 @@ jobs:
       - name: Create .env file
         uses: ozaytsev86/create-env-file@v1
         with:
-          ENV_MONGODB_DATA_API_KEY: ${{ secrets.MONGODB_DATA_API_KEY }}
+          MONGODB_DATA_API_KEY: ${{ secrets.MONGODB_DATA_API_KEY }}
