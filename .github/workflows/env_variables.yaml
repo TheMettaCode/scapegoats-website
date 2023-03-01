@@ -1,0 +1,22 @@
+name: "Create env file"
+
+on:
+  push:
+    branches:
+      - main
+
+  # schedule:
+  #   # * is a special character in YAML so you have to quote this string
+  #   - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  create_env_file:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          touch assets/.env
+          echo "${{ secrets.ENV_VARIABLES }}" > assets/.env
