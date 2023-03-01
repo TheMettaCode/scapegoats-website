@@ -69,7 +69,5 @@ jobs:
     steps:
       - name: "Create env file"
         run: |
-          touch .env
-          echo API_ENDPOINT="https://xxx.execute-api.us-west-2.amazonaws.com" >> .env
-          echo MONGODB_DATA_API_KEY=${{ secrets.ENVKEY_MONGODB_DATA_API_KEY }} >> .env
+          echo "${{ secrets.ENV_FILE }}" > .env
           cat .env
