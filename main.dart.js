@@ -23193,7 +23193,7 @@ A.bU().$1("[MONGODB API INIT] API KEY (ACTIVE): ${{ secrets.MONGODB_DATA_API_KEY
 q=7
 h=t.N
 s=10
-return A.a1(A.ayH(n,B.aC.DA(A.az(["dataSource","sg-web","database","scapegoats","collection","users"],h,h),null),A.az(["Content-Type","application/json","api-key","${{ secrets.MONGODB_DATA_API_KEY }}"],h,h)),$async$a5K)
+return A.a1(A.ayH(n,B.aC.DA(A.az(["dataSource","sg-web","database","scapegoats","collection","users"],h,h),null),A.az(["Access-Control-Request-Headers","*","Content-Type","application/json","api-key","${{ secrets.MONGODB_DATA_API_KEY }}","Access-Control-Allow-Origin","*"],h,h)),$async$a5K)
 case 10:m=a2
 if(m.b===200){A.bU().$1("[MONGODB API INIT] DATA RETRIEVED: "+m.b)
 h=m
