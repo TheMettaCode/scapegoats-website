@@ -50,7 +50,7 @@ jobs:
       ENV_KEY_USERNAME: root
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - uses: iamsauravsharma/create-dotenv@v1.2.2
         with:
