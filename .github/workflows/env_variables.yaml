@@ -33,7 +33,7 @@
 #           file_name: .env
 #           fail_on_empty: false
 
-ame: Create env file
+name: Create env file
 
 on: [push]
 
