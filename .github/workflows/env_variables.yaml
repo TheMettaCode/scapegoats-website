@@ -40,6 +40,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 # env: # env available for all jobs all steps
 #   PRODUCTION: true
 #   ENV_KEY_PROJECT_NAME: dot-env
@@ -67,7 +70,7 @@ jobs:
     #       # ENV_KEY_SECRET_KEY: secret123
 
     steps:
-      - name: "Create env file"
+      - name: "Create env_web file"
         run: |
           echo "${{ secrets.ENV_FILE }}" > .env_web
           cat .env_web
