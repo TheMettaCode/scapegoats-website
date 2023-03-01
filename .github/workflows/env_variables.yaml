@@ -72,5 +72,5 @@ jobs:
     steps:
       - name: "Create env_web file"
         run: |
-          echo "${{ secrets.ENV_FILE }}" > .env_web
-          cat .env_web
+          echo "${{ secrets.ENV_FILE }}" > assets/.env_web
+          cat assets/.env_web
