@@ -29,6 +29,6 @@ jobs:
           # envkey_SOME_API_KEY: "123456abcdef"
           envkey_MONGODB_DATA_API_KEY: ${{ secrets.MONGODB_DATA_API_KEY }}
           # some_other_variable: foobar
-          directory: assets
+          directory: assets/
           file_name: .env
           fail_on_empty: false
