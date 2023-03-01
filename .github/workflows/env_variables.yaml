@@ -15,8 +15,9 @@ permissions:
 jobs:
   create_env_file:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: |
-          touch assets/.env
-          echo "${{ secrets.ENV_VARIABLES }}" > assets/.env
+     steps:
+      - name: Create assets/.env file
+        uses: ozaytsev86/create-env-file@v1
+        with:
+          ENV_MONGODB_DATA_API_KEY: ${{ secrets.MONGODB_DATA_API_KEY }}
+          # ENV_ANOTHER_KEY: ${{ secrets.ANOTHER_KEY }}
