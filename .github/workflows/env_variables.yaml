@@ -37,9 +37,12 @@ name: Create env file
 
 on: [push]
 
-env: # env available for all jobs all steps
-  PRODUCTION: true
-  ENV_KEY_PROJECT_NAME: dot-env
+branches:
+  - main
+
+# env: # env available for all jobs all steps
+#   PRODUCTION: true
+#   ENV_KEY_PROJECT_NAME: dot-env
 
 jobs:
   create-env-file:
@@ -68,5 +71,5 @@ jobs:
         run: |
           touch .env
           echo API_ENDPOINT="https://xxx.execute-api.us-west-2.amazonaws.com" >> .env
-          echo MONGODB_DATA_API_KEY=${{ secrets.MONGODB_DATA_API_KEY }} >> .env
+          echo MONGODB_DATA_API_KEY=${{ secrets.ENVKEY_MONGODB_DATA_API_KEY }} >> .env
           cat .env
