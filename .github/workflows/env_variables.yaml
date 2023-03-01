@@ -45,20 +45,28 @@ jobs:
   create-env-file:
     name: Create env file
     runs-on: ubuntu-latest
-    env: # env available for all steps of jobs
-      ENV_KEY_DEBUG: true
-      ENV_KEY_USERNAME: root
+    # env: # env available for all steps of jobs
+    #   ENV_KEY_DEBUG: true
+    #   ENV_KEY_USERNAME: root
+
+    # steps:
+    #   - uses: actions/checkout@v3
+
+    #   - uses: iamsauravsharma/create-dotenv@v1.2.2
+    #     with:
+    #       env-prefix: "ENVKEY_" # Optional (default: '')
+    #       file-name: "test.env" # Optional (default : '.env')
+    #       directory: "assets/" # Optional (default: '.')
+    #     env: # env available for only this steps
+    #       IS_SERVER: true
+    #       ENV_KEY_USERNAME: admin
+    #       ENVKEY_MONGODB_DATA_API_KEY: ${{ secrets.MONGODB_DATA_API_KEY }}
+    #       # ENV_KEY_SECRET_KEY: secret123
 
     steps:
-      - uses: actions/checkout@v3
-
-      - uses: iamsauravsharma/create-dotenv@v1.2.2
-        with:
-          env-prefix: "ENVKEY_" # Optional (default: '')
-          file-name: "test.env" # Optional (default : '.env')
-          directory: "assets/" # Optional (default: '.')
-        env: # env available for only this steps
-          IS_SERVER: true
-          ENV_KEY_USERNAME: admin
-          ENVKEY_MONGODB_DATA_API_KEY: ${{ secrets.MONGODB_DATA_API_KEY }}
-          # ENV_KEY_SECRET_KEY: secret123
+      - name: "Create env file"
+        run: |
+          touch .env
+          echo API_ENDPOINT="https://xxx.execute-api.us-west-2.amazonaws.com" >> .env
+          echo MONGODB_DATA_API_KEY=${{ secrets.MONGODB_DATA_API_KEY }} >> .env
+          cat .env
