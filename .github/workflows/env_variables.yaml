@@ -15,8 +15,20 @@ permissions:
 jobs:
   create_env_file:
     runs-on: ubuntu-latest
+    # steps:
+    #   - name: Create .env file
+    #     uses: ozaytsev86/create-env-file@v1
+    #     with:
+    #       ENV_MONGODB_DATA_API_KEY: ${{ secrets.MONGODB_DATA_API_KEY }}
+
     steps:
-      - name: Create .env file
-        uses: ozaytsev86/create-env-file@v1
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v1.3
         with:
-          MONGODB_DATA_API_KEY: ${{ secrets.MONGODB_DATA_API_KEY }}
+          # envkey_DEBUG: false
+          # envkey_SOME_API_KEY: "123456abcdef"
+          envkey_MONGODB_DATA_API_KEY: ${{ secrets.MONGODB_DATA_API_KEY }}
+          # some_other_variable: foobar
+          directory: assets
+          file_name: .env
+          fail_on_empty: false
