@@ -58,7 +58,7 @@ jobs:
           # file-name: 'development.env' # Optional (default : '.env')
           directory: "assets/" # Optional (default: '.')
         env: # env available for only this steps
-          IS_SERVER: false
-          # ENV_KEY_USERNAME: admin
+          IS_SERVER: true
+          ENV_KEY_USERNAME: admin
           ENVKEY_MONGODB_DATA_API_KEY: ${{ secrets.MONGODB_DATA_API_KEY }}
           # ENV_KEY_SECRET_KEY: secret123
