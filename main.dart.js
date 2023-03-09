@@ -22987,7 +22987,7 @@ aor:function aor(a,b){this.a=a
 this.b=b},
 aM2(a){var s,r,q=null,p=a.M(t.w).f.a.a*0.05,o=$.asE(),n=A.a7(o).i("aD<1>"),m=A.aw(new A.aD(o,new A.aoB(),n),!0,n.i("p.E"))
 B.b.e6(m,new A.aoC())
-n=A.af3(a,"",200,"assets/sg_origins.png","Taking The Blame Since 2014")
+n=A.af3(a,"",200,"assets/sg_usa_tag.png","Taking The Blame Since 2014")
 o=m.length
 s=q
 r=t.p
@@ -78437,7 +78437,7 @@ while(true)switch(s){case 0:s=2
 return A.a2(A.a2E().bj(new A.ajA(q),t.H),$async$jf)
 case 2:return A.V(null,r)}})
 return A.W($async$jf,r)},
-J(a){var s,r,q,p,o,n,m,l,k,j=this,i=null,h="assets/sg_origins.png",g=A.a1x(A.lK("assets/sg_text_logo_white.png",i,55),B.n,B.bE),f=A.lK(h,i,i)
+J(a){var s,r,q,p,o,n,m,l,k,j=this,i=null,h="assets/sg_usa_tag.png",g=A.a1x(A.lK("assets/sg_text_logo_white.png",i,55),B.n,B.bE),f=A.lK("assets/sg_origins.png",i,i)
 f=A.dg(i,A.xb(!1,i,!0,new A.bf(B.BJ,new A.zO(f,B.hs,i),i),i,!0,i,i,i,i,i,i,i,i,i,i,i,i,i,i),B.m,i,i,i,i,i,i,B.b7,i,i,i)
 if(j.d){s=A.cJ(A.lK(h,i,i),200,i)
 s=A.lm(new A.wA(s,B.bk,i),i,i)}else{$.asg().toString
@@ -78458,7 +78458,7 @@ n=A.aLU(n,j.f)
 m=j.c.M(r).f.a.a*0.05
 r=j.c
 r.toString
-r=A.af3(r,"Home of SCAPEGOATS\u2122 Music and SCAPEGOATS\u2122 Apparel",300,h,"SCAPEGOATS\u2122")
+r=A.af3(r,"Home of SCAPEGOATS\u2122 Music and SCAPEGOATS\u2122 Apparel",150,h,"SCAPEGOATS\u2122")
 l=j.r
 l===$&&A.b()
 k=t.p
@@ -85419,7 +85419,7 @@ s($,"aOZ","aA2",()=>{var q,p=t.S,o=J.a4k(12,p)
 for(q=0;q<12;++q)o[q]=q
 return A.fR(B.b.cY(o,new A.ahd(),p).cZ(0,!1),0,null)})
 r($,"aRh","asE",()=>{var q="Music publishing along with research, licensing and consultation services",p="https://music.scapegoatsusa.com"
-return A.a([A.KE("","",B.l,"",q,"",!1,"","",!1,"assets/sg_death_mask.png","","SCAPEGOATS\u2122 Music",1,"",p,""),A.KE("","",B.l,"","Apparel for those to take the blame.","",!1,"","",!1,"assets/sg_usa_tag.png","","SCAPEGOATS\u2122 Apparel",0,"","https://shop.scapegoatsusa.com",""),A.KE("","",B.l,"","Original music samples and loops. Website & Android App coming soon.",p,!1,"https://www.instagram.com/blakloops/","",!0,"assets/blakloopslogo.png","","BLAKLOOPS\u2122",0,"https://www.twitter.com/blakloops/","",""),A.KE("","",B.n_,"","Use this application to create the unique ISRC identification codes for your songs.","",!0,"","",!0,"assets/isrc_generator_logo.png","","ISRC Generator",1,"","",""),A.KE("","",B.n_,"",q,"",!1,"","",!0,"assets/sg_head_logo.png","","Music Services",2,"","","")],A.aa("w<hi>"))})
+return A.a([A.KE("","",B.l,"",q,"",!1,"","",!1,"assets/sg_death_mask.png","","SCAPEGOATS\u2122 Music",1,"",p,""),A.KE("","",B.l,"","Apparel for those to take the blame.","",!1,"","",!1,"assets/sg_origins.png","","SCAPEGOATS\u2122 Apparel",0,"","https://shop.scapegoatsusa.com",""),A.KE("","",B.l,"","Original music samples and loops. Website & Android App coming soon.",p,!1,"https://www.instagram.com/blakloops/","",!0,"assets/blakloopslogo.png","","BLAKLOOPS\u2122",0,"https://www.twitter.com/blakloops/","",""),A.KE("","",B.n_,"","Use this application to create the unique ISRC identification codes for your songs.","",!0,"","",!0,"assets/isrc_generator_logo.png","","ISRC Generator",1,"","",""),A.KE("","",B.n_,"",q,"",!1,"","",!0,"assets/sg_head_logo.png","","Music Services",2,"","","")],A.aa("w<hi>"))})
 s($,"aNj","azc",()=>$.azh())
 s($,"aNg","az9",()=>$.aze())
 s($,"aNi","azb",()=>$.azg())
