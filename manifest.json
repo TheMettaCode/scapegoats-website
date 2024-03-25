@@ -1,0 +1,41 @@
+{
+    "name": "SCAPEGOATS™",
+    "short_name": "SCAPEGOATS",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#1b1b1b",
+    "theme_color": "#000000",
+    "description": "Official website for SCAPEGOATS™ USA company and divisions.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/android-icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/ms-icon-310x310.png",
+            "sizes": "310x310",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/apple-icon-180x180.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "ios"
+        },
+        {
+            "src": "icons/android-icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/ms-icon-310x310.png",
+            "sizes": "310x310",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
