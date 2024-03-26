@@ -34,6 +34,7 @@ canvaskit/
 .pub-cache/
 .pub/
 /build/
+vault/
 
 # Symbolication related
 app.*.symbols
